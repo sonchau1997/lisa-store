@@ -13,6 +13,7 @@ import ImgCategory from "assets/item-category.svg";
 import ImgCategory1 from "assets/item-category-1.svg";
 import ImgCategory2 from "assets/item-category-2.svg";
 import ImgCategory3 from "assets/item-category-hover 1.svg";
+import Card from "components/Card";
 const StyledContent = styled.div`
 .top-main{
 background: #F0F0F0;
@@ -186,9 +187,80 @@ color: #000000;
     align-items: center;
     padding-left:100px;
 }
+.grid-item{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap:50px;
+    padding: 10px;
+
+}
 
  
 `
+const DataCategory=[{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},
+{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},
+{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},
+{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},
+{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+},
+{
+    img:ImgCategory,
+    title:"Adicolor Classics Joggers",
+    category:"Dress",
+    tag:"sale",
+    price:"63.85"
+
+}
+
+]
 const Content = () => {
     return (
         <StyledContent>
@@ -257,6 +329,10 @@ const Content = () => {
                 <p>Hoodies</p>
                 <p>Jacket</p>
 
+            </div>
+            <div className="grid-item">
+                {DataCategory.map((item)=><Card title={item.title} img={item.img} tag={item.tag}price={item.price}category={item.category}></Card>)}
+         
             </div>
         </StyledContent>
     )
