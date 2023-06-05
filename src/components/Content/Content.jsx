@@ -9,12 +9,14 @@ import Brand3 from "assets/brand-3.svg";
 import Brand4 from "assets/brand-4.svg";
 import Brand5 from "assets/brand-5.svg";
 import ImgCategory12 from "assets/image-category-12.svg";
+import ImgCategory from "assets/item-category.svg";
+import ImgCategory1 from "assets/item-category-1.svg";
+import ImgCategory2 from "assets/item-category-2.svg";
+import ImgCategory3 from "assets/item-category-hover 1.svg";
 const StyledContent = styled.div`
 .top-main{
-height: 847px;
-
-
 background: #F0F0F0;
+
 }
 .content{
 width: 686px;
@@ -102,10 +104,11 @@ width: 223px;
 height: 72px;
 left: 304px;
 top: 591px;
-
 /* Black */
-
 background: #1E2832;
+}
+.btn-shop-with-icon:hover{
+    background-color:#d95050;
 }
 .plant-left{
 position: absolute;
@@ -132,33 +135,60 @@ transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
     align-items: center;
 }
 .hot-category{
-    display: flex;
-   justify-content: space-around;
-   align-items: center;
-    
+   display: flex;
+   justify-content: center;
+ 
 }
 .title-hot-category{
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    position: absolute;
+    font-weight: 400;
+    font-size: 34px;
+    width: 648px;
+    height: 450px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    padding: 90px 0;
+    left: -5%;
+
+}
+.grid-category{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap:50px;
+    padding: 10px;
+}
+.title-grid-product{
+    
+/* H2 */
+
 font-family: 'Roboto';
 font-style: normal;
-font-weight: 400;
-font-size: 34px;
-line-height: 40px;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+/* identical to box height */
+
 text-align: center;
-text-transform: uppercase;
+text-transform: capitalize;
 
 /* Dark */
 
 color: #000000;
 
-transform: rotate(-90deg);
+
+}
+.category{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding-left:100px;
 }
 
-  
-    
+ 
 `
-
-
 const Content = () => {
     return (
         <StyledContent>
@@ -188,41 +218,46 @@ const Content = () => {
 
                     </div>
 
-                
+
                 </div>
                 <div className="plant-right">
                     <img src={PlantRight} alt="plant-right" />
                 </div>
-              
+
             </div>
             <div className="brand">
-                    <img src={Brand1} alt="brand1" />
-                    <img src={Brand2} alt="brand2" />
-                    <img src={Brand3} alt="brand3" />
-                    <img src={Brand4} alt="brand4" />
-                    <img src={Brand5} alt="brand5" />
+                <img src={Brand1} alt="brand1" />
+                <img src={Brand2} alt="brand2" />
+                <img src={Brand3} alt="brand3" />
+                <img src={Brand4} alt="brand4" />
+                <img src={Brand5} alt="brand5" />
 
-                </div>
-                <div className="hot-category">
-                    <div className="title-hot-category">
+            </div>
+            <div className="hot-category">
+
+                <div className="title-hot-category">
                     Explore new and popular styles
-                    </div>
-                    <div>
-                        <img src={ImgCategory12} alt="category1" />
-                    </div>
-                    <div className="grid-category">
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                    </div>
                 </div>
+                <div>
+                    <img src={ImgCategory12} alt="category1" />
+                </div>
+                <div className="grid-category">
+                    <img src={ImgCategory} alt="category1" />
+                    <img src={ImgCategory1} alt="category2" />
+                    <img src={ImgCategory2} alt="category3" />
+                    <img src={ImgCategory3} alt="category4" />
+                </div>
+            </div>
+            <div className="title-grid-product">
+                <h2>Or subscribe to the newsletter</h2>
+            </div>
+            <div className="category">
+                <p>All Products</p>
+                <p>T-Shirt</p>
+                <p>Hoodies</p>
+                <p>Jacket</p>
 
-
-
-
-
-
+            </div>
         </StyledContent>
     )
 }
