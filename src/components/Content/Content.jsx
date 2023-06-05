@@ -8,18 +8,16 @@ import Brand2 from "assets/brand-2.svg";
 import Brand3 from "assets/brand-3.svg";
 import Brand4 from "assets/brand-4.svg";
 import Brand5 from "assets/brand-5.svg";
+import ImgCategory2 from "assets/item-category-2.svg";
 const StyledContent = styled.div`
 .top-main{
-width: 1920px;
 height: 847px;
-left: 0px;
-top: 0px;
+
 
 background: #F0F0F0;
 }
 .content{
 width: 686px;
-height: 364px;
 display: flex;
 justify-content: space-between;
 padding:0 20%;
@@ -29,18 +27,15 @@ align-items: center;
 .content-left{
 display: flex;
 flex-direction: column;
-column-gap:500px;
 width: 686px;
-height: 364px;
+
+gap: 2rem;
 
 }
 .content-right{
-    width: 40%;
+   
 }
-.content-right img{
-   width: 424px;
-   height: 542px;
-}
+
 .title-top-main{
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
  width: 360px;
@@ -114,13 +109,55 @@ background: #1E2832;
 }
 .plant-left{
 position: absolute;
+width: 132.34px;
+height: 66.61px;
+left: 86.16px;
+top: 614.62px;
+
 transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+
 }
 .plant-right{
-position: absolute; 
 
+position: absolute;
+width: 195px;
+height: 262px;
 left: 1874.44px;
 top: 365.8px;
+transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
+}
+.brand{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hot-category{
+    display: flex;
+    width: 1320px;
+    height: 648px;
+    align-items: center;
+    
+}
+.title-hot-category{
+position: absolute;
+width: 648px;
+height: 52px;
+left: -52px;
+top: 648px;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 40px;
+text-align: center;
+text-transform: uppercase;
+
+/* Dark */
+
+color: #000000;
+
+transform: rotate(-90deg);
 }
 
   
@@ -162,7 +199,24 @@ const Content = () => {
                 <div className="plant-right">
                     <img src={PlantRight} alt="plant-right" />
                 </div>
+              
             </div>
+            <div className="brand">
+                    <img src={Brand1} alt="brand1" />
+                    <img src={Brand2} alt="brand2" />
+                    <img src={Brand3} alt="brand3" />
+                    <img src={Brand4} alt="brand4" />
+                    <img src={Brand5} alt="brand5" />
+
+                </div>
+                <div className="hot-category">
+                    <div className="title-hot-category">
+                    Explore new and popular styles
+                    </div>
+                    <div>
+                        <img src={ImgCategory2} alt="category1" />
+                    </div>
+                </div>
 
 
 
