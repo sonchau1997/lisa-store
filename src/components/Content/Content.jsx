@@ -8,7 +8,7 @@ import Brand2 from "assets/brand-2.svg";
 import Brand3 from "assets/brand-3.svg";
 import Brand4 from "assets/brand-4.svg";
 import Brand5 from "assets/brand-5.svg";
-import ImgCategory2 from "assets/item-category-2.svg";
+import ImgCategory12 from "assets/image-category-12.svg";
 const StyledContent = styled.div`
 .top-main{
 height: 847px;
@@ -133,17 +133,11 @@ transform: matrix(-0.87, 0.5, 0.5, 0.87, 0, 0);
 }
 .hot-category{
     display: flex;
-    width: 1320px;
-    height: 648px;
-    align-items: center;
+   justify-content: space-around;
+   align-items: center;
     
 }
 .title-hot-category{
-position: absolute;
-width: 648px;
-height: 52px;
-left: -52px;
-top: 648px;
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
 font-family: 'Roboto';
 font-style: normal;
@@ -214,7 +208,13 @@ const Content = () => {
                     Explore new and popular styles
                     </div>
                     <div>
-                        <img src={ImgCategory2} alt="category1" />
+                        <img src={ImgCategory12} alt="category1" />
+                    </div>
+                    <div className="grid-category">
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                        <img src="" alt="" />
+                        <img src="" alt="" />
                     </div>
                 </div>
 
