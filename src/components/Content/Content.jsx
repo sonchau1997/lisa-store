@@ -11,6 +11,14 @@ import ImgCategory2 from "assets/item-category-2.svg";
 import ImgCategory3 from "assets/item-category-hover 1.svg";
 import Filter from "assets/filter.svg";
 import Card from "components/Card";
+import ImgProduct1 from "assets/image-product-1.svg";
+import ImgProduct2 from "assets/image-product-2.svg";
+import ImgProduct3 from "assets/image-product-3.svg";
+import ImgProduct4 from "assets/image-product-4.svg";
+import ImgProduct5 from "assets/image-product-5.svg";
+import ImgProduct6 from "assets/image-product-6.svg";
+import ImgProduct7 from "assets/image-product-7.svg";
+import ImgProduct8 from "assets/image-product-8.svg";
 const StyledContent = styled.div`
 padding:0 300px;
 
@@ -108,73 +116,63 @@ background: #1E2832;
 
  
 `
-const DataCategory = [{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85"
 
-},
-{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85"
 
-}, {
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85"
-
-}, {
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85"
-
-},
-{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85",
-    discountPrice: "20"
-
-},
-{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85",
-    discountPrice: "20"
-
-},
-{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85",
-    discountPrice: "20"
-
-},
-{
-    img: ImgCategory,
-    title: "Adicolor Classics Joggers",
-    category: "Dress",
-    tag: "sale",
-    price: "63.85"
-
-}
-
-]
+const DataCategory = [
+    {
+      img: ImgProduct1,
+      title: "Adicolor Classics Joggers",
+      category: "Dress",
+      price: "63.85"
+    },
+    {
+      img: ImgProduct2,
+      title: "Nike Sportswear Futura Luxe",
+      category: "Bag",
+      price: "130.00"
+    },
+    {
+      img: ImgProduct3,
+      title: "Geometric print Scarf",
+      category: "Scarf",
+      price: "53.00"
+    },
+    {
+      img: ImgProduct4,
+      title: "Yellow Reserved Hoodie",
+      category: "Dress",
+      tag: "Sale",
+      price: "364.00",
+      discountPrice: "155.00"
+    },
+    {
+      img: ImgProduct5,
+      title: "Basic Dress Greens",
+      category: "Dress",
+      tag: "Hot",
+      price: "236.00"
+    },
+    {
+      img: ImgProduct6,
+      title: "Nike Air Zoom Pegasus",
+      category: "Shoe",
+      tag: "Sale",
+      discountPrice: "198.00",
+      price: "220.00"
+    },
+    {
+      img: ImgProduct7,
+      title: "Nike Repel Miler",
+      category: "Dress",
+      price: "120.50"
+    },
+    {
+      img: ImgProduct8,
+      title: "Nike Sportswear Futura Luxe",
+      category: "Glasses",
+      price: "160.00"
+    },
+  ];
 const Content = () => {
     return (
         <StyledContent>
