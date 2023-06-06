@@ -19,8 +19,13 @@ import ImgProduct5 from "assets/image-product-5.svg";
 import ImgProduct6 from "assets/image-product-6.svg";
 import ImgProduct7 from "assets/image-product-7.svg";
 import ImgProduct8 from "assets/image-product-8.svg";
+import Banner from "components/Banner";
 const StyledContent = styled.div`
-padding:0 300px;
+//padding:0 300px;
+.container{
+    padding:0 300px;
+
+}
 
 .brand{
     height: 400px;
@@ -176,7 +181,7 @@ const DataCategory = [
 const Content = () => {
     return (
         <StyledContent>
-
+            <div className="container">
             <div className="brand">
                 <img src={Brand1} alt="brand1" />
                 <img src={Brand2} alt="brand2" />
@@ -224,6 +229,11 @@ const Content = () => {
                 {DataCategory.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
 
             </div>
+            </div>
+
+           
+            <Banner></Banner>
+            
         </StyledContent>
     )
 }
