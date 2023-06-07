@@ -28,25 +28,22 @@ import ImgProduct14 from "assets/image-product-14.svg";
 import Banner from "components/Banner";
 import SideShow from "components/SideShow";
 const StyledContent = styled.div`
-//padding:0 300px;
-.container{
-    padding:0 200px;
+  .container {
+    padding: 0 200px;
+  }
 
-}
-
-.brand{
+  .brand {
     height: 400px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.hot-category{
-   display: flex;
-   justify-content: center;
- 
-}
-.title-hot-category{
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+  }
+  .hot-category {
+    display: flex;
+    justify-content: center;
+  }
+  .title-hot-category {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
     position: absolute;
     font-weight: 400;
     font-size: 34px;
@@ -56,200 +53,185 @@ const StyledContent = styled.div`
     text-transform: uppercase;
     transform: rotate(-90deg);
     padding: 90px 0;
-    left:160px;
-
-}
-.grid-category{
+    left: 160px;
+  }
+  .grid-category {
     display: grid;
-    grid-template-columns: auto auto ;
-    gap:5px;
-}
-.title-grid-product{
+    grid-template-columns: auto auto;
+    gap: 5px;
+  }
+  .title-grid-product {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-    
-/* H2 */
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 59px;
-/* identical to box height */
+    /* H2 */
 
-text-align: center;
-text-transform: capitalize;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
 
-/* Dark */
+    text-align: center;
+    text-transform: capitalize;
 
-color: #000000;
+    /* Dark */
 
-
-}
-.category{
+    color: #000000;
+  }
+  .category {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.nav{
+  }
+  .nav {
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
-}
-.grid-item{
+  }
+  .grid-item {
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    
+    grid-template-columns: auto auto auto auto;
+  }
+  .btn-filter-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 4px;
+    width: 92px;
+    height: 32px;
 
-}
-.btn-filter-with-icon{
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 5px 15px;
-gap: 4px;
-width: 92px;
-height: 32px;
+    /* Black */
+    color: #ffff;
+    background: #1e2832;
+  }
+  .btn-filter-with-icon button {
+    border: none;
+  }
 
-/* Black */
-color:#FFFF;
-background: #1E2832;
-
-}
-.btn-filter-with-icon button{
-    border:none;
-
-}
-
-.btn-filter-with-icon:hover{
+  .btn-filter-with-icon:hover {
     background-color: #d95050;
-   
+  }
+  .title-best-seller {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
 
-}
-.title-best-seller{
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 59px;
-/* identical to box height */
+    text-align: center;
+    text-transform: capitalize;
 
-text-align: center;
-text-transform: capitalize;
+    /* Dark */
 
-/* Dark */
+    color: #000000;
+  }
+  .title-follow {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    /* identical to box height */
 
-color: #000000;
+    text-align: center;
+    text-transform: capitalize;
 
-}
-.title-follow{
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 59px;
-/* identical to box height */
+    /* Dark */
 
-text-align: center;
-text-transform: capitalize;
+    color: #000000;
+  }
 
-/* Dark */
-
-color: #000000;
-    
-}
-
-.follow{
-display: flex;
-flex-direction: column;
-//gap: 70px;
-background: #F0F0F0;
-margin-top: 150px;
-}
-.flex-product{
+  .follow {
+    display: flex;
+    flex-direction: column;
+    //gap: 70px;
+    background: #f0f0f0;
+    margin-top: 150px;
+  }
+  .flex-product {
     padding: 0 200px;
     display: flex;
     justify-content: space-between;
-    gap:20px;
-}
-.author h4{
- @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 33px;
-/* identical to box height */
+    gap: 20px;
+  }
+  .author h4 {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
 
-text-align: center;
-text-transform: capitalize;
+    text-align: center;
+    text-transform: capitalize;
 
-/* Primary */
+    /* Primary */
 
-color: #FF6F61;
-
-}
-
- 
-`
-
+    color: #ff6f61;
+  }
+`;
 
 const DataCategory = [
-    {
-        img: ImgProduct1,
-        title: "Adicolor Classics Joggers",
-        category: "Dress",
-        price: "63.85"
-    },
-    {
-        img: ImgProduct2,
-        title: "Nike Sportswear Futura Luxe",
-        category: "Bag",
-        price: "130.00"
-    },
-    {
-        img: ImgProduct3,
-        title: "Geometric print Scarf",
-        category: "Scarf",
-        price: "53.00"
-    },
-    {
-        img: ImgProduct4,
-        title: "Yellow Reserved Hoodie",
-        category: "Dress",
-        tag: "Sale",
-        price: "364.00",
-        discountPrice: "155.00"
-    },
-    {
-        img: ImgProduct5,
-        title: "Basic Dress Greens",
-        category: "Dress",
-        tag: "Hot",
-        price: "236.00"
-    },
-    {
-        img: ImgProduct6,
-        title: "Nike Air Zoom Pegasus",
-        category: "Shoe",
-        tag: "Sale",
-        discountPrice: "198.00",
-        price: "220.00"
-    },
-    {
-        img: ImgProduct7,
-        title: "Nike Repel Miler",
-        category: "Dress",
-        price: "120.50"
-    },
-    {
-        img: ImgProduct8,
-        title: "Nike Sportswear Futura Luxe",
-        category: "Glasses",
-        price: "160.00"
-    },
+  {
+    img: ImgProduct1,
+    title: "Adicolor Classics Joggers",
+    category: "Dress",
+    price: "63.85",
+  },
+  {
+    img: ImgProduct2,
+    title: "Nike Sportswear Futura Luxe",
+    category: "Bag",
+    price: "130.00",
+  },
+  {
+    img: ImgProduct3,
+    title: "Geometric print Scarf",
+    category: "Scarf",
+    price: "53.00",
+  },
+  {
+    img: ImgProduct4,
+    title: "Yellow Reserved Hoodie",
+    category: "Dress",
+    tag: "Sale",
+    price: "364.00",
+    discountPrice: "155.00",
+  },
+  {
+    img: ImgProduct5,
+    title: "Basic Dress Greens",
+    category: "Dress",
+    tag: "Hot",
+    price: "236.00",
+  },
+  {
+    img: ImgProduct6,
+    title: "Nike Air Zoom Pegasus",
+    category: "Shoe",
+    tag: "Sale",
+    discountPrice: "198.00",
+    price: "220.00",
+  },
+  {
+    img: ImgProduct7,
+    title: "Nike Repel Miler",
+    category: "Dress",
+    price: "120.50",
+  },
+  {
+    img: ImgProduct8,
+    title: "Nike Sportswear Futura Luxe",
+    category: "Glasses",
+    price: "160.00",
+  },
 ];
 // const DataProductFolow=[
 //     {img:ImgProduct9},
@@ -260,105 +242,99 @@ const DataCategory = [
 //     {img:ImgProduct14},
 // ]
 const Content = () => {
-    return (
-        <StyledContent>
-            <div className="container">
-                <div className="brand">
-                    <img src={Brand1} alt="brand1" />
-                    <img src={Brand2} alt="brand2" />
-                    <img src={Brand3} alt="brand3" />
-                    <img src={Brand4} alt="brand4" />
-                    <img src={Brand5} alt="brand5" />
+  return (
+    <StyledContent>
+      <div className="container">
+        <div className="brand">
+          <img src={Brand1} alt="brand1" />
+          <img src={Brand2} alt="brand2" />
+          <img src={Brand3} alt="brand3" />
+          <img src={Brand4} alt="brand4" />
+          <img src={Brand5} alt="brand5" />
+        </div>
+        <div className="hot-category">
+          <div className="title-hot-category">
+            Explore new and popular styles
+          </div>
+          <div className="img-main">
+            <img src={ImgCategory12} alt="category1" />
+          </div>
+          <div className="grid-category">
+            <img src={ImgCategory} alt="category1" />
+            <img src={ImgCategory1} alt="category2" />
+            <img src={ImgCategory2} alt="category3" />
+            <img src={ImgCategory3} alt="category4" />
+          </div>
+        </div>
+        <div className="title-grid-product">
+          <h2>Or subscribe to the newsletter</h2>
+        </div>
+        <div className="category">
+          <div className="nav">
+            <p>All Products</p>
+            <p>T-Shirt</p>
+            <p>Hoodies</p>
+            <p>Jacket</p>
+          </div>
+          <div className="btn-filter">
+            <button className="btn-filter-with-icon">
+              <img src={Filter} alt="filter" />
+              Filter
+            </button>
+          </div>
+        </div>
+        <div className="grid-item">
+          {DataCategory.map((item) => (
+            <Card
+              title={item.title}
+              img={item.img}
+              tag={item.tag}
+              price={item.price}
+              category={item.category}
+              discountPrice={item.discountPrice}
+            ></Card>
+          ))}
+        </div>
+      </div>
 
-                </div>
-                <div className="hot-category">
+      <Banner></Banner>
+      <div className="container">
+        <div className="title-best-seller">
+          <h2>Best Seller</h2>
+        </div>
+        <div className="category">
+          <div className="nav">
+            <p>All Products</p>
+            <p>T-Shirt</p>
+            <p>Hoodies</p>
+            <p>Jacket</p>
+          </div>
+          <div className="btn-show">
+            <button>Show All</button>
+          </div>
+        </div>
+        <div className="grid-item">
+          <SideShow></SideShow>
+        </div>
+      </div>
+      <div className="follow">
+        <div className="title-follow">
+          <h2>Follow products and discounts on Instagram</h2>
+        </div>
 
-                    <div className="title-hot-category">
-                        Explore new and popular styles
-                    </div>
-                    <div className="img-main">
-                        <img src={ImgCategory12} alt="category1" />
-                    </div>
-                    <div className="grid-category">
-                        <img src={ImgCategory} alt="category1" />
-                        <img src={ImgCategory1} alt="category2" />
-                        <img src={ImgCategory2} alt="category3" />
-                        <img src={ImgCategory3} alt="category4" />
-                    </div>
-                </div>
-                <div className="title-grid-product">
-                    <h2>Or subscribe to the newsletter</h2>
-                </div>
-                <div className="category">
-                    <div className="nav">
-                        <p>All Products</p>
-                        <p>T-Shirt</p>
-                        <p>Hoodies</p>
-                        <p>Jacket</p>
-                    </div>
-                    <div className="btn-filter">
-                        <button className="btn-filter-with-icon">
-                            <img src={Filter} alt="filter" />
-                            Filter
-                        </button>
-                    </div>
-
-
-
-                </div>
-                <div className="grid-item">
-                    {DataCategory.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
-
-                </div>
-            </div>
-
-
-            <Banner></Banner>
-            <div className="container">
-                <div className="title-best-seller">
-                    <h2>Best Seller</h2>
-                </div>
-                <div className="category">
-                    <div className="nav">
-                        <p>All Products</p>
-                        <p>T-Shirt</p>
-                        <p>Hoodies</p>
-                        <p>Jacket</p>
-                    </div>
-                    <div className="btn-show">
-                        <button >
-                            Show All
-                        </button>
-                    </div>
-                </div>
-                <div className="grid-item">
-
-                    <SideShow></SideShow>
-
-                </div>
-
-
-
-            </div>
-            <div className="follow">
-                <div className="title-follow">
-                    <h2>Follow products and discounts on Instagram</h2>
-                </div>
-
-                <div className="flex-product">
-                    <img src={ImgProduct9} alt="product" />
-                    <img src={ImgProduct10} alt="product" />
-                    <img src={ImgProduct11} alt="product" />
-                    <img src={ImgProduct12} alt="product" />
-                    <img src={ImgProduct13} alt="product" />
-                    <img src={ImgProduct14} alt="product" />
-                </div>
-                <div className="author"><h4>@lisa.official</h4></div>
-            </div>
-
-
-
-        </StyledContent>
-    )
-}
+        <div className="flex-product">
+          <img src={ImgProduct9} alt="product" />
+          <img src={ImgProduct10} alt="product" />
+          <img src={ImgProduct11} alt="product" />
+          <img src={ImgProduct12} alt="product" />
+          <img src={ImgProduct13} alt="product" />
+          <img src={ImgProduct14} alt="product" />
+        </div>
+        <div className="author">
+          <h4>@lisa.official</h4>
+        </div>
+      </div>
+    </StyledContent>
+  );
+};
 export default Content;
