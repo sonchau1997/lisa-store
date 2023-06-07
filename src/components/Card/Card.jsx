@@ -1,4 +1,8 @@
 import { styled } from "styled-components";
+import { ReactComponent as Heart } from "assets/heart-icon1.svg";
+import { ReactComponent as Search } from "assets/search-icon.svg";
+import { ReactComponent as ShopingIcon } from "assets/shop.svg";
+
 const StyledCard = styled.div`
 width: 312px;
 .title{
@@ -113,6 +117,90 @@ color: rgba(0, 0, 0, 0.5);
     background-color: #000000;
 
 }
+
+.hover-action{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1e2832;
+    height: 50px;
+   visibility: hidden;
+   opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+   
+}
+.action-left{
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+
+}
+.heart-icon{
+    width: 30px;
+    height: 30px;
+    
+    filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(343deg)
+      brightness(106%) contrast(106%);
+    
+   
+}
+.search-icon{
+    width:30px;
+    height:30px;
+    filter: invert(100%) sepia(0%) saturate(22%) hue-rotate(343deg)
+        brightness(106%) contrast(106%);
+    
+}
+.heart-icon:hover{
+   
+            filter: invert(69%) sepia(91%) saturate(4583%) hue-rotate(329deg) brightness(94%) contrast(85%);
+        
+
+
+}
+.search-icon:hover{
+   
+       
+            filter: invert(69%) sepia(91%) saturate(4583%) hue-rotate(329deg) brightness(94%) contrast(85%);
+        
+
+}
+
+.action-right:hover{
+    button{
+        color:#e05252;
+
+    }svg{
+        filter: invert(69%) sepia(91%) saturate(4583%) hue-rotate(329deg) brightness(94%) contrast(85%);
+}
+    }
+
+           
+
+   
+.action-right button{
+    border-style: none;
+    background: #1e2832;
+    color: #FFF;
+    
+}
+
+.action-right{
+    display: flex;
+    align-items: center;
+    gap:10px;
+
+ 
+}
+.pic:hover{
+    .hover-action{
+    visibility: visible;
+      opacity: 1;
+    }
+}
 `
 
 
@@ -123,7 +211,20 @@ const Card = ({ img, title, category, price, tag, discountPrice, ...rest }) => {
                 <img src={img} alt="img" />
                 {tag === 'Sale' ? (<div className="sale">{tag}</div>) : null}
                 {tag === 'Hot' ? (<div className="hot">{tag}</div>) : null}
+                <div className="hover-action">
+                    <div className="action-left">
+                        <Heart className="heart-icon" />
+                        <Search className="search-icon" />
+                    </div>
+                    <div className="action-right">
+                        <ShopingIcon />
+                        <button className="btn-shop-now">Shop Now</button>
+
+                    </div>
+
+                </div>
             </div>
+
 
             <div className="title">{title}</div>
             <div className="cateory-price">

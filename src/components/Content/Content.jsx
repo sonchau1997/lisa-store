@@ -20,6 +20,7 @@ import ImgProduct6 from "assets/image-product-6.svg";
 import ImgProduct7 from "assets/image-product-7.svg";
 import ImgProduct8 from "assets/image-product-8.svg";
 import Banner from "components/Banner";
+import SideShow from "components/SideShow";
 const StyledContent = styled.div`
 //padding:0 300px;
 .container{
@@ -58,6 +59,7 @@ const StyledContent = styled.div`
     gap:5px;
 }
 .title-grid-product{
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
     
 /* H2 */
 
@@ -118,6 +120,23 @@ background: #1E2832;
    
 
 }
+.title-best-seller{
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+/* identical to box height */
+
+text-align: center;
+text-transform: capitalize;
+
+/* Dark */
+
+color: #000000;
+
+}
 
  
 `
@@ -125,115 +144,141 @@ background: #1E2832;
 
 const DataCategory = [
     {
-      img: ImgProduct1,
-      title: "Adicolor Classics Joggers",
-      category: "Dress",
-      price: "63.85"
+        img: ImgProduct1,
+        title: "Adicolor Classics Joggers",
+        category: "Dress",
+        price: "63.85"
     },
     {
-      img: ImgProduct2,
-      title: "Nike Sportswear Futura Luxe",
-      category: "Bag",
-      price: "130.00"
+        img: ImgProduct2,
+        title: "Nike Sportswear Futura Luxe",
+        category: "Bag",
+        price: "130.00"
     },
     {
-      img: ImgProduct3,
-      title: "Geometric print Scarf",
-      category: "Scarf",
-      price: "53.00"
+        img: ImgProduct3,
+        title: "Geometric print Scarf",
+        category: "Scarf",
+        price: "53.00"
     },
     {
-      img: ImgProduct4,
-      title: "Yellow Reserved Hoodie",
-      category: "Dress",
-      tag: "Sale",
-      price: "364.00",
-      discountPrice: "155.00"
+        img: ImgProduct4,
+        title: "Yellow Reserved Hoodie",
+        category: "Dress",
+        tag: "Sale",
+        price: "364.00",
+        discountPrice: "155.00"
     },
     {
-      img: ImgProduct5,
-      title: "Basic Dress Greens",
-      category: "Dress",
-      tag: "Hot",
-      price: "236.00"
+        img: ImgProduct5,
+        title: "Basic Dress Greens",
+        category: "Dress",
+        tag: "Hot",
+        price: "236.00"
     },
     {
-      img: ImgProduct6,
-      title: "Nike Air Zoom Pegasus",
-      category: "Shoe",
-      tag: "Sale",
-      discountPrice: "198.00",
-      price: "220.00"
+        img: ImgProduct6,
+        title: "Nike Air Zoom Pegasus",
+        category: "Shoe",
+        tag: "Sale",
+        discountPrice: "198.00",
+        price: "220.00"
     },
     {
-      img: ImgProduct7,
-      title: "Nike Repel Miler",
-      category: "Dress",
-      price: "120.50"
+        img: ImgProduct7,
+        title: "Nike Repel Miler",
+        category: "Dress",
+        price: "120.50"
     },
     {
-      img: ImgProduct8,
-      title: "Nike Sportswear Futura Luxe",
-      category: "Glasses",
-      price: "160.00"
+        img: ImgProduct8,
+        title: "Nike Sportswear Futura Luxe",
+        category: "Glasses",
+        price: "160.00"
     },
-  ];
+];
 const Content = () => {
     return (
         <StyledContent>
             <div className="container">
-            <div className="brand">
-                <img src={Brand1} alt="brand1" />
-                <img src={Brand2} alt="brand2" />
-                <img src={Brand3} alt="brand3" />
-                <img src={Brand4} alt="brand4" />
-                <img src={Brand5} alt="brand5" />
+                <div className="brand">
+                    <img src={Brand1} alt="brand1" />
+                    <img src={Brand2} alt="brand2" />
+                    <img src={Brand3} alt="brand3" />
+                    <img src={Brand4} alt="brand4" />
+                    <img src={Brand5} alt="brand5" />
 
-            </div>
-            <div className="hot-category">
-
-                <div className="title-hot-category">
-                    Explore new and popular styles
                 </div>
-                <div className="img-main">
-                    <img src={ImgCategory12} alt="category1" />
+                <div className="hot-category">
+
+                    <div className="title-hot-category">
+                        Explore new and popular styles
+                    </div>
+                    <div className="img-main">
+                        <img src={ImgCategory12} alt="category1" />
+                    </div>
+                    <div className="grid-category">
+                        <img src={ImgCategory} alt="category1" />
+                        <img src={ImgCategory1} alt="category2" />
+                        <img src={ImgCategory2} alt="category3" />
+                        <img src={ImgCategory3} alt="category4" />
+                    </div>
                 </div>
-                <div className="grid-category">
-                    <img src={ImgCategory} alt="category1" />
-                    <img src={ImgCategory1} alt="category2" />
-                    <img src={ImgCategory2} alt="category3" />
-                    <img src={ImgCategory3} alt="category4" />
+                <div className="title-grid-product">
+                    <h2>Or subscribe to the newsletter</h2>
+                </div>
+                <div className="category">
+                    <div className="nav">
+                        <p>All Products</p>
+                        <p>T-Shirt</p>
+                        <p>Hoodies</p>
+                        <p>Jacket</p>
+                    </div>
+                    <div className="btn-filter">
+                        <button className="btn-filter-with-icon">
+                            <img src={Filter} alt="filter" />
+                            Filter
+                        </button>
+                    </div>
+
+
+
+                </div>
+                <div className="grid-item">
+                    {DataCategory.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
+
                 </div>
             </div>
-            <div className="title-grid-product">
-                <h2>Or subscribe to the newsletter</h2>
-            </div>
-            <div className="category">
-                <div className="nav">
-                    <p>All Products</p>
-                    <p>T-Shirt</p>
-                    <p>Hoodies</p>
-                    <p>Jacket</p>
-                </div>
-                <div className="btn-filter">
-                    <button className="btn-filter-with-icon">
-                        <img src={Filter} alt="filter" />
-                        Filter
-                    </button>
-                </div>
 
 
-
-            </div>
-            <div className="grid-item">
-                {DataCategory.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
-
-            </div>
-            </div>
-
-           
             <Banner></Banner>
-            
+            <div className="container">
+                <div className="title-best-seller">
+                    <h2>Best Seller</h2>
+                </div>
+                <div className="category">
+                    <div className="nav">
+                        <p>All Products</p>
+                        <p>T-Shirt</p>
+                        <p>Hoodies</p>
+                        <p>Jacket</p>
+                    </div>
+                    <div className="btn-show">
+                        <button >
+                            Show All
+                        </button>
+                    </div>
+                    </div>
+                    <div className="grid-item">
+                        
+                       <SideShow></SideShow>
+
+                    </div>
+                
+
+            </div>
+
+
         </StyledContent>
     )
 }
