@@ -160,18 +160,19 @@ text-transform: capitalize;
 color: #000000;
     
 }
+
+.follow{
+display: flex;
+flex-direction: column;
+//gap: 70px;
+background: #F0F0F0;
+margin-top: 150px;
+}
 .flex-product{
+    padding: 0 200px;
     display: flex;
     justify-content: space-between;
-    padding:0 200px;
-}
-.follow{
-    display: flex;
-    flex-direction:column;
-    background:#F0F0F0;
-    column-gap:70px;
-    height: 653px;
-    
+    gap:20px;
 }
 .author h4{
  @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
