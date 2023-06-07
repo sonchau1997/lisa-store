@@ -1,19 +1,9 @@
 import Card from "components/Card";
-import React, { Component } from "react";
-import Slider from "react-slick";
 import ImgProduct1 from "assets/image-product-1.svg";
 import ImgProduct2 from "assets/image-product-2.svg";
 import ImgProduct3 from "assets/image-product-3.svg";
 import ImgProduct4 from "assets/image-product-4.svg";
-import { styled } from "styled-components";
-const StyledSideShow = styled.div`
-.grid-item{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-}
-
-    
-`
+import Carousel from "react-multi-carousel";
 
 const DataBestSeller = [{
     img: ImgProduct1,
@@ -40,30 +30,53 @@ const DataBestSeller = [{
     tag: "Sale",
     price: "364.00",
     discountPrice: "155.00"
-}];
-
-class SideShow extends Component {
-    render(){
-        let settings = { 
-			dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-		}
-		return (
-            <div>
-                <Slider {...settings}>
-                <StyledSideShow>
-                    <div className="grid-item">
-                        {DataBestSeller.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
-                    </div>
-                </StyledSideShow>
-
-            </Slider>
-            </div>
-			)
-	}
+},
+{
+    img: ImgProduct4,
+    title: "Yellow Reserved Hoodie",
+    category: "Dress",
+    tag: "Sale",
+    price: "364.00",
+    discountPrice: "155.00"
+},
+{
+    img: ImgProduct4,
+    title: "Yellow Reserved Hoodie",
+    category: "Dress",
+    tag: "Sale",
+    price: "364.00",
+    discountPrice: "155.00"
 }
+];
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 4
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+
+
+const SideShow = () => {
+
+    return (
+             <Carousel responsive={responsive}>
+                {DataBestSeller.map((item) => <Card title={item.title} img={item.img} tag={item.tag} price={item.price} category={item.category} discountPrice={item.discountPrice}></Card>)}
+            </Carousel>
+    );
+}
+
 
 export default SideShow;
