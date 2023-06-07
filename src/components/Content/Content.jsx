@@ -27,6 +27,7 @@ import ImgProduct13 from "assets/image-product-13.svg";
 import ImgProduct14 from "assets/image-product-14.svg";
 import Banner from "components/Banner";
 import SideShow from "components/SideShow";
+import IconInstagram from "assets/instagramWhite.png";
 const StyledContent = styled.div`
   .container {
     padding: 0 200px;
@@ -150,13 +151,15 @@ const StyledContent = styled.div`
   .follow {
     display: flex;
     flex-direction: column;
-    //gap: 70px;
+    gap: 70px;
     background: #f0f0f0;
     margin-top: 150px;
+    height: 653px;
   }
   .flex-product {
     padding: 0 200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
   }
@@ -175,6 +178,66 @@ const StyledContent = styled.div`
     /* Primary */
 
     color: #ff6f61;
+  }
+  .btn-show {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    gap: 4px;
+
+    width: 93px;
+    height: 32px;
+
+    /* Black */
+
+    background: #1e2832;
+  }
+  .btn-show span {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    width: 63px;
+    height: 22px;
+
+    /* Button - Small */
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    /* White */
+
+    color: #ffffff;
+  }
+  .btn-show:hover {
+    background-color: #d95050;
+  }
+
+  .action:hover {
+    img:first-child {
+      filter: brightness(50%);
+    }
+    background-image: url(${IconInstagram});
+    background-repeat: no-repeat;
+    .icon-size {
+      display: block;
+    }
+  }
+  .icon-size {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100px;
+    height: 100px;
+    display: none;
+  }
+  .action {
+    position: relative;
   }
 `;
 
@@ -233,14 +296,6 @@ const DataCategory = [
     price: "160.00",
   },
 ];
-// const DataProductFolow=[
-//     {img:ImgProduct9},
-//     {img:ImgProduct10},
-//     {img:ImgProduct11},
-//     {img:ImgProduct12},
-//     {img:ImgProduct13},
-//     {img:ImgProduct14},
-// ]
 const Content = () => {
   return (
     <StyledContent>
@@ -309,9 +364,10 @@ const Content = () => {
             <p>Hoodies</p>
             <p>Jacket</p>
           </div>
-          <div className="btn-show">
-            <button>Show All</button>
-          </div>
+
+          <button className="btn-show">
+            <span>Show All</span>
+          </button>
         </div>
         <div className="grid-item">
           <SideShow></SideShow>
@@ -323,17 +379,37 @@ const Content = () => {
         </div>
 
         <div className="flex-product">
-          <img src={ImgProduct9} alt="product" />
-          <img src={ImgProduct10} alt="product" />
-          <img src={ImgProduct11} alt="product" />
-          <img src={ImgProduct12} alt="product" />
-          <img src={ImgProduct13} alt="product" />
-          <img src={ImgProduct14} alt="product" />
+          <div className="action">
+            <img  src={ImgProduct9} alt="product9" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
+
+          <div className="action">
+            <img src={ImgProduct10} alt="product10" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
+          <div className="action">
+            <img src={ImgProduct11} alt="product11" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
+          <div className="action">
+            <img  src={ImgProduct12} alt="product12" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
+          <div className="action">
+            <img  src={ImgProduct13} alt="product13" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
+          <div className="action">
+            <img  src={ImgProduct14} alt="product14" />
+            <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
+          </div>
         </div>
         <div className="author">
-          <h4>@lisa.official</h4>
-        </div>
+        <h4>@lisa.official</h4>
       </div>
+      </div>
+      
     </StyledContent>
   );
 };
