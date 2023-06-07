@@ -19,6 +19,12 @@ import ImgProduct5 from "assets/image-product-5.svg";
 import ImgProduct6 from "assets/image-product-6.svg";
 import ImgProduct7 from "assets/image-product-7.svg";
 import ImgProduct8 from "assets/image-product-8.svg";
+import ImgProduct9 from "assets/image-product-9.svg";
+import ImgProduct10 from "assets/image-product-10.svg";
+import ImgProduct11 from "assets/image-product-11.svg";
+import ImgProduct12 from "assets/image-product-12.svg";
+import ImgProduct13 from "assets/image-product-13.svg";
+import ImgProduct14 from "assets/image-product-14.svg";
 import Banner from "components/Banner";
 import SideShow from "components/SideShow";
 const StyledContent = styled.div`
@@ -138,8 +144,8 @@ color: #000000;
 
 }
 .title-follow{
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-    font-family: 'Roboto';
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 50px;
@@ -153,6 +159,36 @@ text-transform: capitalize;
 
 color: #000000;
     
+}
+.flex-product{
+    display: flex;
+    justify-content: space-between;
+    padding:0 200px;
+}
+.follow{
+    display: flex;
+    flex-direction:column;
+    background:#F0F0F0;
+    column-gap:70px;
+    height: 653px;
+    
+}
+.author h4{
+ @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+text-align: center;
+text-transform: capitalize;
+
+/* Primary */
+
+color: #FF6F61;
+
 }
 
  
@@ -214,6 +250,14 @@ const DataCategory = [
         price: "160.00"
     },
 ];
+// const DataProductFolow=[
+//     {img:ImgProduct9},
+//     {img:ImgProduct10},
+//     {img:ImgProduct11},
+//     {img:ImgProduct12},
+//     {img:ImgProduct13},
+//     {img:ImgProduct14},
+// ]
 const Content = () => {
     return (
         <StyledContent>
@@ -291,12 +335,26 @@ const Content = () => {
                     <SideShow></SideShow>
 
                 </div>
+
+
+
+            </div>
+            <div className="follow">
                 <div className="title-follow">
                     <h2>Follow products and discounts on Instagram</h2>
                 </div>
 
-
+                <div className="flex-product">
+                    <img src={ImgProduct9} alt="product" />
+                    <img src={ImgProduct10} alt="product" />
+                    <img src={ImgProduct11} alt="product" />
+                    <img src={ImgProduct12} alt="product" />
+                    <img src={ImgProduct13} alt="product" />
+                    <img src={ImgProduct14} alt="product" />
+                </div>
+                <div className="author"><h4>@lisa.official</h4></div>
             </div>
+
 
 
         </StyledContent>
