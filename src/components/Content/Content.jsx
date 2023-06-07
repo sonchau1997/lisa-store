@@ -24,7 +24,7 @@ import SideShow from "components/SideShow";
 const StyledContent = styled.div`
 //padding:0 300px;
 .container{
-    padding:0 300px;
+    padding:0 200px;
 
 }
 
@@ -136,6 +136,23 @@ text-transform: capitalize;
 
 color: #000000;
 
+}
+.title-follow{
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 59px;
+/* identical to box height */
+
+text-align: center;
+text-transform: capitalize;
+
+/* Dark */
+
+color: #000000;
+    
 }
 
  
@@ -268,13 +285,16 @@ const Content = () => {
                             Show All
                         </button>
                     </div>
-                    </div>
-                    <div className="grid-item">
-                        
-                       <SideShow></SideShow>
+                </div>
+                <div className="grid-item">
 
-                    </div>
-                
+                    <SideShow></SideShow>
+
+                </div>
+                <div className="title-follow">
+                    <h2>Follow products and discounts on Instagram</h2>
+                </div>
+
 
             </div>
 
