@@ -11,7 +11,7 @@ const StyledLayout = styled.div`
 const PrimaryLayout = () => (
     <StyledLayout>
         <Header></Header>
-        <Content></Content>
+        <Content></Content> 
         <Footer></Footer>
     </StyledLayout>
 );

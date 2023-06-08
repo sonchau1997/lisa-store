@@ -1,14 +1,4 @@
 import { styled } from "styled-components";
-import Brand1 from "assets/brand-1.svg";
-import Brand2 from "assets/brand-2.svg";
-import Brand3 from "assets/brand-3.svg";
-import Brand4 from "assets/brand-4.svg";
-import Brand5 from "assets/brand-5.svg";
-import ImgCategory12 from "assets/image-category-12.svg";
-import ImgCategory from "assets/item-category.svg";
-import ImgCategory1 from "assets/item-category-1.svg";
-import ImgCategory2 from "assets/item-category-2.svg";
-import ImgCategory3 from "assets/item-category-hover 1.svg";
 import Filter from "assets/filter.svg";
 import Card from "components/Card";
 import ImgProduct1 from "assets/image-product-1.svg";
@@ -28,41 +18,16 @@ import ImgProduct14 from "assets/image-product-14.svg";
 import Banner from "components/Banner";
 import SideShow from "components/SideShow";
 import IconInstagram from "assets/instagramWhite.png";
+import Brand from "components/Brand";
+import HotCategory from "components/Hot-Category";
 const StyledContent = styled.div`
+  margin-top: 50px;
   .container {
     padding: 0 300px;
     //width: 1320px;
   }
 
-  .brand {
-    height: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .hot-category {
-    display: flex;
-    justify-content: space-between;
-    gap:24px;
-  }
-  .title-hot-category {
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-    position: absolute;
-    font-weight: 400;
-    font-size: 34px;
-    width: 648px;
-    height: 450px;
-    text-align: center;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
-    padding: 90px 0;
-    left: 160px;
-  }
-  .grid-category {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 24px;
-  }
+ 
   .title-grid-product h2 {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
 
@@ -97,8 +62,7 @@ const StyledContent = styled.div`
   .grid-item {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap:24px;
- 
+    gap: 24px;
   }
   .btn-filter-with-icon {
     display: flex;
@@ -136,7 +100,7 @@ const StyledContent = styled.div`
 
     color: #000000;
   }
-  .item-best-seller{
+  .item-best-seller {
     width: 1320px;
   }
   .title-follow h2 {
@@ -158,7 +122,6 @@ const StyledContent = styled.div`
     background: #f0f0f0;
     margin-top: 150px;
     height: 653px;
-    
   }
   .flex-product {
     padding: 0 300px;
@@ -240,6 +203,13 @@ const StyledContent = styled.div`
   .action {
     position: relative;
   }
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+
+   
+  }
 `;
 
 const DataCategory = [
@@ -301,27 +271,8 @@ const Content = () => {
   return (
     <StyledContent>
       <div className="container">
-        <div className="brand">
-          <img src={Brand1} alt="brand1" />
-          <img src={Brand2} alt="brand2" />
-          <img src={Brand3} alt="brand3" />
-          <img src={Brand4} alt="brand4" />
-          <img src={Brand5} alt="brand5" />
-        </div>
-        <div className="hot-category">
-          <div className="title-hot-category">
-            Explore new and popular styles
-          </div>
-          <div className="img-main">
-            <img src={ImgCategory12} alt="category1" />
-          </div>
-          <div className="grid-category">
-            <img src={ImgCategory} alt="category1" />
-            <img src={ImgCategory1} alt="category2" />
-            <img src={ImgCategory2} alt="category3" />
-            <img src={ImgCategory3} alt="category4" />
-          </div>
-        </div>
+        <Brand/>
+        <HotCategory/>
         <div className="title-grid-product">
           <h2>Or subscribe to the newsletter</h2>
         </div>
@@ -353,7 +304,7 @@ const Content = () => {
         </div>
       </div>
 
-      <Banner></Banner>
+      <Banner/>
       <div className="container">
         <div className="title-best-seller">
           <h2>Best Seller</h2>
@@ -381,7 +332,7 @@ const Content = () => {
 
         <div className="flex-product">
           <div className="action">
-            <img  src={ImgProduct9} alt="product9" />
+            <img src={ImgProduct9} alt="product9" />
             <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
           </div>
 
@@ -394,23 +345,22 @@ const Content = () => {
             <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
           </div>
           <div className="action">
-            <img  src={ImgProduct12} alt="product12" />
+            <img src={ImgProduct12} alt="product12" />
             <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
           </div>
           <div className="action">
-            <img  src={ImgProduct13} alt="product13" />
+            <img src={ImgProduct13} alt="product13" />
             <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
           </div>
           <div className="action">
-            <img  src={ImgProduct14} alt="product14" />
+            <img src={ImgProduct14} alt="product14" />
             <img className="icon-size" src={IconInstagram} alt="iconInstagra" />
           </div>
         </div>
         <div className="author">
-        <h4>@lisa.official</h4>
+          <h4>@lisa.official</h4>
+        </div>
       </div>
-      </div>
-      
     </StyledContent>
   );
 };
