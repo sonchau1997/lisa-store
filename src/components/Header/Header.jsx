@@ -8,7 +8,7 @@ import { ReactComponent as UserIcon } from "assets/user-icon.svg";
 import { ReactComponent as ShopingIcon } from "assets/shoping-icon.svg";
 const StyledHeader = styled.div`
   background: #f0f0f0;
-  padding:0 300px;
+  padding: 0 300px;
   height: 847px;
   position: relative;
   .top-main {
@@ -19,7 +19,6 @@ const StyledHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e3e3e3;
-  
   }
   .content-left {
     display: flex;
@@ -78,7 +77,6 @@ const StyledHeader = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
   .btn-shop-with-icon {
     display: flex;
@@ -114,8 +112,7 @@ const StyledHeader = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top:135px
-  
+    padding-top: 135px;
   }
   .search-icon {
     display: flex;
@@ -176,24 +173,57 @@ const StyledHeader = styled.div`
     gap: 20px;
   }
   @media only screen and (max-width: 768px) {
-   padding:0 0;
-  .nav{
-   display:flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-  .search-icon{
-    order: 1;
-  }
-  .logo{
-    width: 100%;
-    order:0 ;
-  }
-  .account{
-    order: 2;
-  }
-  }
-}
+    padding: 0 20px;
+    height: 650px;
+    background-color: #f0f0f0;
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
 
+      .search-icon {
+        order: 1;
+      }
+      .logo {
+        width: 100%;
+        order: 0;
+      }
+      .account {
+        order: 2;
+      }
+    }
+    .top-main {
+      width: 85%;
+      height: 85%;
+    }
+    .content-left {
+      gap: 0;
+    }
+    .btn-shop-with-icon {
+      width: 103px;
+      height: 42px;
+      margin-left:25px;
+    }
+    .content-right img {
+      width: 120px;
+    }
+    .title-top-main {
+      font-size: 40px;
+      width: 200px;
+    }
+    .content-product {
+      padding-top: 20px;
+      margin-left: 40px;
+    }
+    .plant-right {
+      width: 75px;
+      top: 285.8px;
+    }
+    .plant-left {
+      width: 52.34px;
+      top: 334px;
+    }
+  }
 `;
 const Header = () => {
   return (
