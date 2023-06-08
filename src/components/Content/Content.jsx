@@ -63,7 +63,7 @@ const StyledContent = styled.div`
     grid-template-columns: auto auto;
     gap: 24px;
   }
-  .title-grid-product {
+  .title-grid-product h2 {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
 
     /* H2 */
@@ -120,7 +120,7 @@ const StyledContent = styled.div`
   .btn-filter-with-icon:hover {
     background-color: #d95050;
   }
-  .title-best-seller {
+  .title-best-seller h2 {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
     font-family: "Roboto";
     font-style: normal;
@@ -139,22 +139,16 @@ const StyledContent = styled.div`
   .item-best-seller{
     width: 1320px;
   }
-  .title-follow {
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-    font-family: "Roboto";
+  .title-follow h2 {
+    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22%22");
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
     line-height: 59px;
-    //width: 1013px;
     /* identical to box height */
-
     text-align: center;
     text-transform: capitalize;
-
-    /* Dark */
-
-    color: #000000;
   }
 
   .follow {
