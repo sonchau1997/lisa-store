@@ -8,9 +8,10 @@ import { ReactComponent as UserIcon } from "assets/user-icon.svg";
 import { ReactComponent as ShopingIcon } from "assets/shoping-icon.svg";
 const StyledHeader = styled.div`
   background: #f0f0f0;
+  padding:0 300px;
   height: 847px;
+  position: relative;
   .top-main {
-    position: relative;
     width: 100%;
   }
   .nav {
@@ -18,7 +19,6 @@ const StyledHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e3e3e3;
-    padding:0 200px;
   
   }
   .content-left {
@@ -78,6 +78,7 @@ const StyledHeader = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+
   }
   .btn-shop-with-icon {
     display: flex;
@@ -114,6 +115,7 @@ const StyledHeader = styled.div`
     justify-content: space-around;
     align-items: center;
     padding-top:135px
+  
   }
   .search-icon {
     height: 50px;
