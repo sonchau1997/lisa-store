@@ -30,18 +30,20 @@ import SideShow from "components/SideShow";
 import IconInstagram from "assets/instagramWhite.png";
 const StyledContent = styled.div`
   .container {
-    padding: 0 200px;
+    padding: 0 300px;
+    //width: 1320px;
   }
 
   .brand {
-    height: 400px;
+    height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   .hot-category {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    gap:24px;
   }
   .title-hot-category {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
@@ -59,7 +61,7 @@ const StyledContent = styled.div`
   .grid-category {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 5px;
+    gap: 24px;
   }
   .title-grid-product {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
@@ -84,6 +86,7 @@ const StyledContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1320px;
   }
   .nav {
     display: flex;
@@ -94,7 +97,8 @@ const StyledContent = styled.div`
   .grid-item {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin: 0 0;
+    gap:24px;
+ 
   }
   .btn-filter-with-icon {
     display: flex;
@@ -132,6 +136,9 @@ const StyledContent = styled.div`
 
     color: #000000;
   }
+  .item-best-seller{
+    width: 1320px;
+  }
   .title-follow {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
     font-family: "Roboto";
@@ -139,6 +146,7 @@ const StyledContent = styled.div`
     font-weight: 500;
     font-size: 50px;
     line-height: 59px;
+    //width: 1013px;
     /* identical to box height */
 
     text-align: center;
@@ -156,6 +164,7 @@ const StyledContent = styled.div`
     background: #f0f0f0;
     margin-top: 150px;
     height: 653px;
+    
   }
   .flex-product {
     padding: 0 200px;
@@ -368,7 +377,7 @@ const Content = () => {
             <span>Show All</span>
           </button>
         </div>
-        <div className="grid-item">
+        <div className="item-best-seller">
           <SideShow></SideShow>
         </div>
       </div>
