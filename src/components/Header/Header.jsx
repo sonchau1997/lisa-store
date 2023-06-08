@@ -100,14 +100,12 @@ const StyledHeader = styled.div`
   .plant-left {
     position: absolute;
     width: 132.34px;
-    height: 66.61px;
     left: 0;
     top: 424px;
   }
   .plant-right {
     position: absolute;
     width: 195px;
-    height: 262px;
     right: 0;
     top: 275.8px;
   }

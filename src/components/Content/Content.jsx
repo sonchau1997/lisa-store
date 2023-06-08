@@ -94,6 +94,7 @@ const StyledContent = styled.div`
   .grid-item {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    margin: 0 0;
   }
   .btn-filter-with-icon {
     display: flex;
@@ -185,8 +186,6 @@ const StyledContent = styled.div`
     align-items: center;
     padding: 5px 15px;
     gap: 4px;
-
-    width: 93px;
     height: 32px;
 
     /* Black */
