@@ -167,11 +167,10 @@ const StyledContent = styled.div`
     
   }
   .flex-product {
-    padding: 0 200px;
+    padding: 0 300px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 24px;
   }
   .author h4 {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
