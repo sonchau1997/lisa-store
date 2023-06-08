@@ -118,6 +118,8 @@ const StyledHeader = styled.div`
   
   }
   .search-icon {
+    display: flex;
+    align-items: center;
     height: 50px;
     width: 50px;
   }
