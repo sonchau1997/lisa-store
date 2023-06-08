@@ -175,6 +175,25 @@ const StyledHeader = styled.div`
     justify-items: center;
     gap: 20px;
   }
+  @media only screen and (max-width: 768px) {
+   padding:0 0;
+  .nav{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+  .search-icon{
+    order: 1;
+  }
+  .logo{
+    width: 100%;
+    order:0 ;
+  }
+  .account{
+    order: 2;
+  }
+  }
+}
+
 `;
 const Header = () => {
   return (
