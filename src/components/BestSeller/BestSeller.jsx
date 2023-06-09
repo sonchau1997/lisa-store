@@ -2,11 +2,11 @@ import { styled } from "styled-components";
 import SideShow from "components/SideShow";
 
 const StyledBestSeller=styled.div`
+padding: 0 300px;
 .category {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1320px;
   }
   .nav {
     display: flex;
@@ -68,6 +68,24 @@ const StyledBestSeller=styled.div`
   .btn-show:hover {
     background-color: #d95050;
   }
+  @media only screen and (max-width: 768px) {
+    padding:0 20px;
+    .category{
+    flex-wrap: wrap;
+    width: 315px;
+  }
+  .btn-show{
+    height: 72px;
+    height:22px;
+  }
+
+  .item-best-seller {
+    width: 100%;
+  }
+ 
+
+  }
+
 `
 const BestSeller=()=>{
     return(

@@ -12,7 +12,7 @@ const StyledBanner = styled.div`
   }
   .content {
     position: relative;
-    height: 776px;
+    height: 200px;
   }
   .logo2 {
     position: absolute;
@@ -84,6 +84,41 @@ const StyledBanner = styled.div`
   }
   .btn-seeCollection:hover{
     background-color: #ff6f61;
+  }
+  @media only screen and (max-width: 768px) {
+    background-size:contain;
+    background-color:#000;
+    height: 300px;
+
+    .logo1{
+    top: 11px;
+    right: 0;
+    width: 152px;
+    height: 59px;
+    }
+    .logo2{
+    top: 40px;
+    right: 40px;
+    width: 161px;
+    height: 31px;
+    }
+    .title-banner{
+      top:70px;
+      right: 24.3px;
+      width: 134px;
+      font-size: 13.2px;
+    line-height: 22.1px;
+    }
+    .btn-seeCollection {
+      top:226px;
+      right: 50px;
+      width: 107px;
+      height: 21px;
+    }
+    .btn-seeCollection span {
+      font-size: 9px;
+      line-height: 14px;
+    }
   }
 `;
 const Banner = () => {

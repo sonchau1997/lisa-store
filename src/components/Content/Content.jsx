@@ -9,25 +9,19 @@ const StyledContent = styled.div`
   margin-top: 50px;
   .container {
     padding: 0 300px;
-    //width: 1320px;
   }
-  
 `
 const Content = () => {
   return (
     <StyledContent>
-      <div className="container">
         <Brand />
         <HotCategory />
         <NewSletter />
-
-      </div>
-
-      <Banner />
-      <div className="container">
-        <BestSeller />
-      </div>
-      <InstagramFollow></InstagramFollow>
+        <Banner />
+  
+         <BestSeller />
+     
+      <InstagramFollow/> 
 
     </StyledContent>
   );

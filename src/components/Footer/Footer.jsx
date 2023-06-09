@@ -118,6 +118,23 @@ const BottomFooterStyle = styled.div`
   Button:hover {
     background-color: #ff6f61;
   }
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+    .icon-size1 {
+      width: 150px;
+    }
+    .flex-container span {
+      font-size: 10px;
+    }
+    div {
+      font-size: 12px;
+      margin: 0 5px;
+    }
+    button {
+      margin: 0 10px;
+    }
+  }
+  
 `;
 
 const Footer = () => {

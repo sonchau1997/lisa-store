@@ -71,6 +71,17 @@ const StyledInstagramFollow = styled.div`
   .action {
     position: relative;
   }
+  @media only screen and (max-width: 768px) {
+    .follow {
+     height: 100%;
+    }
+    .flex-product {
+        padding: 0 20px;
+        flex-direction:column;
+        align-items: center;
+
+    }
+  }
     
 `
 const InstagramFollow = () => {

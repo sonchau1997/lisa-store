@@ -6,6 +6,7 @@ import ImgCategory2 from "assets/item-category-2.svg";
 import ImgCategory3 from "assets/item-category-hover 1.svg";
 
 const StyledHotCategory = styled.div`
+padding: 0 300px;
   .hot-category {
     margin-top: 50px;
     display: flex;
@@ -31,9 +32,9 @@ const StyledHotCategory = styled.div`
     gap: 24px;
   }
   @media only screen and (max-width: 768px) {
+    padding: 0 20px;
     position: relative;
     .hot-category {
-      padding: 0 20px;
       flex-direction: column;
       gap: 5px;
     }
@@ -50,7 +51,7 @@ const StyledHotCategory = styled.div`
       padding: 0;
       left: 0;
       font-size: 14px;
-      width: 400px;
+      width: 300px;
     }
   }
 `;

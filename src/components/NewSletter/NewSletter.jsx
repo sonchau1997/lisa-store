@@ -10,7 +10,8 @@ import ImgProduct6 from "assets/image-product-6.svg";
 import ImgProduct7 from "assets/image-product-7.svg";
 import ImgProduct8 from "assets/image-product-8.svg";
 
-const StyledNewSletter=styled.div`
+const StyledNewSletter = styled.div`
+padding:0 300px;
 .title-grid-product h2 {
     @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
 
@@ -67,95 +68,110 @@ const StyledNewSletter=styled.div`
   .btn-filter-with-icon:hover {
     background-color: #d95050;
   }
-
+  @media only screen and (max-width: 768px) {
+    padding: 0 20px;
+  .grid-item{
+  grid-template-columns: auto;
+  }
+  .category{
+ flex-wrap: wrap;
+    width: 315px;
+  }
+ 
+  .btn-filter-with-icon {
+    width: 72px;
+    height:22px;
+  }
+}
+ 
 `
 const DataCategory = [
     {
-      img: ImgProduct1,
-      title: "Adicolor Classics Joggers",
-      category: "Dress",
-      price: "63.85",
+        img: ImgProduct1,
+        title: "Adicolor Classics Joggers",
+        category: "Dress",
+        price: "63.85",
     },
     {
-      img: ImgProduct2,
-      title: "Nike Sportswear Futura Luxe",
-      category: "Bag",
-      price: "130.00",
+        img: ImgProduct2,
+        title: "Nike Sportswear Futura Luxe",
+        category: "Bag",
+        price: "130.00",
     },
     {
-      img: ImgProduct3,
-      title: "Geometric print Scarf",
-      category: "Scarf",
-      price: "53.00",
+        img: ImgProduct3,
+        title: "Geometric print Scarf",
+        category: "Scarf",
+        price: "53.00",
     },
     {
-      img: ImgProduct4,
-      title: "Yellow Reserved Hoodie",
-      category: "Dress",
-      tag: "Sale",
-      price: "364.00",
-      discountPrice: "155.00",
+        img: ImgProduct4,
+        title: "Yellow Reserved Hoodie",
+        category: "Dress",
+        tag: "Sale",
+        price: "364.00",
+        discountPrice: "155.00",
     },
     {
-      img: ImgProduct5,
-      title: "Basic Dress Greens",
-      category: "Dress",
-      tag: "Hot",
-      price: "236.00",
+        img: ImgProduct5,
+        title: "Basic Dress Greens",
+        category: "Dress",
+        tag: "Hot",
+        price: "236.00",
     },
     {
-      img: ImgProduct6,
-      title: "Nike Air Zoom Pegasus",
-      category: "Shoe",
-      tag: "Sale",
-      discountPrice: "198.00",
-      price: "220.00",
+        img: ImgProduct6,
+        title: "Nike Air Zoom Pegasus",
+        category: "Shoe",
+        tag: "Sale",
+        discountPrice: "198.00",
+        price: "220.00",
     },
     {
-      img: ImgProduct7,
-      title: "Nike Repel Miler",
-      category: "Dress",
-      price: "120.50",
+        img: ImgProduct7,
+        title: "Nike Repel Miler",
+        category: "Dress",
+        price: "120.50",
     },
     {
-      img: ImgProduct8,
-      title: "Nike Sportswear Futura Luxe",
-      category: "Glasses",
-      price: "160.00",
+        img: ImgProduct8,
+        title: "Nike Sportswear Futura Luxe",
+        category: "Glasses",
+        price: "160.00",
     },
-  ];
-const NewSletter=()=>{
-    return(
+];
+const NewSletter = () => {
+    return (
         <StyledNewSletter>
-             <div className="title-grid-product">
-          <h2>Or subscribe to the newsletter</h2>
-        </div>
-        <div className="category">
-          <div className="nav">
-            <p>All Products</p>
-            <p>T-Shirt</p>
-            <p>Hoodies</p>
-            <p>Jacket</p>
-          </div>
-          <div className="btn-filter">
-            <button className="btn-filter-with-icon">
-              <img src={Filter} alt="filter" />
-              Filter
-            </button>
-          </div>
-        </div>
-        <div className="grid-item">
-          {DataCategory.map((item) => (
-            <Card
-              title={item.title}
-              img={item.img}
-              tag={item.tag}
-              price={item.price}
-              category={item.category}
-              discountPrice={item.discountPrice}
-            ></Card>
-          ))}
-        </div>
+            <div className="title-grid-product">
+                <h2>Or subscribe to the newsletter</h2>
+            </div>
+            <div className="category">
+                <div className="nav">
+                    <p>All Products</p>
+                    <p>T-Shirt</p>
+                    <p>Hoodies</p>
+                    <p>Jacket</p>
+                </div>
+                <div className="btn-filter">
+                    <button className="btn-filter-with-icon">
+                        <img src={Filter} alt="filter" />
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <div className="grid-item">
+                {DataCategory.map((item) => (
+                    <Card
+                        title={item.title}
+                        img={item.img}
+                        tag={item.tag}
+                        price={item.price}
+                        category={item.category}
+                        discountPrice={item.discountPrice}
+                    ></Card>
+                ))}
+            </div>
 
         </StyledNewSletter>
     )

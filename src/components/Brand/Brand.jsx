@@ -5,13 +5,16 @@ import Brand4 from "assets/brand-4.svg";
 import Brand5 from "assets/brand-5.svg";
 import { styled } from "styled-components";
 const StyleBrand = styled.div`
+padding: 0 300px;
   .brand {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   @media only screen and (max-width: 768px) {
+    padding:0 20px;
     .brand {
+    
       justify-content: center;
       flex-wrap: wrap;
     }
