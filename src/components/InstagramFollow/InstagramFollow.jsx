@@ -49,42 +49,6 @@ const StyledInstagramFollow = styled.div`
 
     color: #ff6f61;
   }
-  .btn-show {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 15px;
-    gap: 4px;
-    height: 32px;
-
-    /* Black */
-
-    background: #1e2832;
-  }
-  .btn-show span {
-    @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
-    width: 63px;
-    height: 22px;
-
-    /* Button - Small */
-
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height */
-
-    text-transform: capitalize;
-
-    /* White */
-
-    color: #ffffff;
-  }
-  .btn-show:hover {
-    background-color: #d95050;
-  }
-
   .action:hover {
     img:first-child {
       filter: brightness(50%);
