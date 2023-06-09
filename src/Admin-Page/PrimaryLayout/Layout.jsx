@@ -1,6 +1,10 @@
 import { Layout, Space } from 'antd';
 import { styled } from 'styled-components';
+import IconDashBoard from "assets/layer group.svg";
+
 const { Header, Footer, Sider, Content } = Layout;
+
+
 const SiderComponet = styled.div`
 .logo{
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap%22");
@@ -56,6 +60,7 @@ const LayoutAdmin = () => (
             <Sider style={siderStyle}>
                 <SiderComponet>
                     <div className='logo'>Lisa Admin</div>
+                    <img src={IconDashBoard} alt="" />
                 </SiderComponet>
 
             </Sider>
